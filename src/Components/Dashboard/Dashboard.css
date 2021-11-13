@@ -1,0 +1,15 @@
+.dashboard-container {
+  background-color: #fef3f4;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+a:hover {
+  color: red;
+}
+.dashboard-item {
+  list-style: none;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,42 @@
+.bg-color {
+  background-color: #fef3f4;
+}
+
+.icon a i {
+  text-decoration: none;
+  color: #8d9296;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.icon a i:hover {
+  color: #e85556;
+  transform: translateY(-30%) scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fas,
+.far {
+  color: #e85556;
+}
+
+.footer-option p a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer-option p a:hover {
+  color: #e85556;
+}
+
+.footer-input {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 70%;
+  border: 0;
+}
+
+.footer-input:hover {
+  outline: 1px solid #fdcdcd;
+}

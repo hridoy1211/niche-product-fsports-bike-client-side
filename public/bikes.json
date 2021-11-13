@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "Honda CBR1000RR-R",
+      "desc": "The all-new Honda CBR1000RR-R is here to take inquisitive, adventurous riders further, inspiring them to go beyond their well-established routes Rapid, agile and fun, the and on to unexplored terrain. CBR1000RR-R embodies the progressive thinking ofHusqvarna Motorcycles in a motorcycle built to make lightwork of long days inthe saddle, covering vast distances on tarmac and offroad.",
+      "cc": "350/54.3 cu-in",
+      "engine": "Four stroke, parallel twin cylinder, DOHC, 4 valves per cylinder",
+      "power": "74 kW / 105 hp @ 6000 rpm",
+      "abs": "Bosch 9.1 ME",
+      "weight": "207 kg",
+      "price": "7,00,000",
+      "img": "https://i.ibb.co/PrZp8mr/honda-up-1.webp"
+    },
+    {
+      "id": 2,
+      "name": "Honda CBR1000R",
+      "desc": "The Honda CBR1000R is packed with useful technology to allow the intrepid traveller to focus on the ride. The 300 cc parallel-twin engine acts as a stressed member in its chromium-molybdenum steel frame and delivers a peak power of 105 hp and 100 Nm of torque, accessed by a ride-by-wire throttle. There are three selectable ride modes as standard (Street, Rain, Offroad) and an optional Explorer mode to cater for every circumstance the Norden 901 rider might encounter. An Easy Shift function allows for clutchless changes up and down the six-speed gearbox, while a Power Assist Slipper Clutch (PASC) maximises rear wheel composure.",
+      "cc": "300/50.3 cu-in",
+      "engine": "Four stroke, parallel twin cylinder, DOHC, 4 valves per cylinder",
+      "power": "64 kW / 105 hp @ 5000 rpm",
+      "abs": "Glory 8.3.1 ME",
+      "weight": "200 kg",
+      "price": "5,00,000",
+      "img": "https://i.ibb.co/549sKcc/honda-up-2.webp"
+    },
+    {
+      "id": 3,
+      "name": "Honda PCX 125",
+      "desc": "The Honda PCX is packed with useful technology to allow to focus on comfort. The 125 cc parallel-twin engine acts as a stressed member in its chromium-molybdenum steel frame and delivers a  accessed by a ride-by-wire throttle. There are three selectable ride modes as standard An Easy Shift function allows for clutchless changes up and down the six-speed gearbox, while a Power Assist Slipper Clutch (PASC) maximises rear wheel composure.",
+      "cc": "None",
+      "engine": "Double stroke, parallel twin cylinder",
+      "power": "40 kW / single charge",
+      "abs": "None",
+      "weight": "120 kg",
+      "price": "2,00,000",
+      "img": "https://i.ibb.co/gdcZDt5/honda-up-3.webp"
+    },
+    {
+      "id": 4,
+      "name": "Honda XSR 900",
+      "desc": "The first XSR 900 was introduced by Honda five years ago, and since then, the Sports Heritage segment has featured models that pay homage to some of the Japanese brands most iconic motorcycle XSR900presents itself with a more muscular design and clear improvements in electronics, but its impossible to start writing about it without immediately highlighting two aspects. Firstly, its color in the Legend  Blue hue, a blue that reminds us of Christian Sarrons Yamaha Sonautos from the 80s; secondly, its new Deltabox aluminum frame, which is an evolution of the structure that appeared at the same time, revolutionizing the market and which was introduced in several asphalt models. Today, on the 2022 XSR900 this frame is presented by Yamaha as lighter, more robust and more accurate.",
+      "cc": "889/54.3 cu-in",
+      "engine": "Four stroke, parallel twin cylinder, DOHC, 4 valves per cylinder",
+      "power": "117 kW / 105 hp @ 10000 rpm",
+      "abs": "Bosch 11.1 MRF Tubeless",
+      "weight": "200 kg",
+      "price": "11,00,000",
+      "img": "https://i.ibb.co/mF9XgZP/honda-up-4.webp"
+    },
+    {
+      "id": 5,
+      "name": "Ducati Multistrada V4",
+      "desc": "The Multistrada V4 Pikes Peak takes life around the excellent Multistrada V4 platform: where performance, smoothness of operation and reliability offered by the V4 Granturismo engine, together with the contained weight, the ease of handling, the comfort for rider and passenger alike, state-of-the-art equipment and electronics are part of the cornerstones of the Multistrada V4 family. Starting from these solid foundations, the new V4 Pikes Peak was developed by introducing significant changes in terms of chassis set-up, premium ergonomics, electronic controls as well as numerous dedicated components, which give the bike a distinctly sportier attitude compared to the Multistrada V4. Ducati, once again, promises to delight a wide range of riders looking for the purest performance within the dual bikes universe.",
+      "cc": "999/71.3 cu-in",
+      "engine": "Four stroke,90 deg Granturismo V4, counter rotating cankshaft, 4 valves per cylinder",
+      "power": "125 kW / 170 hp @ 12500 rpm",
+      "abs": "Standard Cornering Tubeless",
+      "weight": "200 kg",
+      "price": "15,00,000",
+      "img": "https://i.ibb.co/JcFrnTf/honda-up-5.webp"
+    },
+    {
+      "id": 6,
+      "name": "Honda NT 1100/DCT",
+      "desc": "Honda NT 1100/DCT handling, the comfort for rider and passenger alike, state-of-the-art equipment and electronics are part of the cornerstones of the Multistrada V4 family. Starting from these solid foundations, the new V4 Pikes Peak was developed by introducing significant changes in terms of chassis set-up, premium ergonomics, electronic controls as well as numerous dedicated components, which give the bike a distinctly sportier attitude compared to the Multistrada V4. Ducati, once again, prom",
+      "cc": "500/54.3 cu-in",
+      "engine": "Four stroke, parallel twin with 270 deg, SOHC, 4 valves per cylinder",
+      "power": "85 kW / 105 hp @ 7500 rpm",
+      "abs": "Bosch 11.1 MRF Tubeless",
+      "weight": "200 kg",
+      "price": "10,00,000",
+      "img": "https://i.ibb.co/HGTwWhr/honda-up-6.webp"
+    }
+  ]

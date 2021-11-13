@@ -1,0 +1,35 @@
+.access-btn {
+  list-style: none;
+  display: flex;
+}
+
+.btn-design {
+  border: 1px solid #e85556;
+  color: #e85556;
+}
+.btn-design:hover {
+  background-color: #e85556;
+  color: white !important;
+}
+
+.btn-design2 {
+  background-color: #e85556;
+  color: white;
+}
+.btn-design2:hover {
+  background-color: white;
+  border: 1px solid #e85556;
+  color: #e85556;
+}
+
+.header-img {
+  border: 1px solid rgb(235, 235, 235);
+  width: 38px;
+  padding: 3px;
+  border-radius: 100%;
+}
+
+.nav-link span {
+  color: #800a0a;
+  font-weight: 400;
+}

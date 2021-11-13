@@ -1,0 +1,34 @@
+.add-products form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-products form input,
+textarea {
+  width: 40%;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0.5px solid gray;
+}
+
+.add-products form input:hover,
+textarea:hover {
+  outline: 0.5px solid rgb(238, 124, 124);
+}
+
+.submitBtn {
+  background-color: rgb(238, 124, 124);
+  border: 0px;
+  color: #fff;
+  font-weight: 500;
+  outline: none;
+}
+
+.submitBtn:hover {
+  border: 1px solid rgb(238, 124, 124);
+  background-color: #fff;
+  color: rgb(238, 124, 124);
+}
