@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCR3qPKGJyCW67KAYXvkdpFzNFSBgatiJU",
-    authDomain: "f-sport-bike-collections.firebaseapp.com",
-    projectId: "f-sport-bike-collections",
-    storageBucket: "f-sport-bike-collections.appspot.com",
-    messagingSenderId: "59962864104",
-    appId: "1:59962864104:web:475e324f4f9568fdd4745d"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
 };
 export default firebaseConfig;
