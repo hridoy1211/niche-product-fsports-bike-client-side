@@ -16,7 +16,7 @@ const SingleProduct = () => {
         const onSubmit = data => {
             data.status = 'pending';
             data.email = user?.email;
-            fetch('http://localhost:5000/addMyOrders', {
+            fetch('https://gentle-brushlands-73473.herokuapp.com/addMyOrders', {
                 method:'POST',
                 headers: {'content-type':'application/json'},
                 body: JSON.stringify(data)
@@ -36,7 +36,7 @@ const SingleProduct = () => {
         }
 
     useEffect(() => {
-        const url = `http://localhost:5000/singlePoduct/${bikeId}`
+        const url = `https://gentle-brushlands-73473.herokuapp.com/singlePoduct/${bikeId}`
         fetch(url)
         .then(res => res.json())
         .then(data => setSingleProduct(data))

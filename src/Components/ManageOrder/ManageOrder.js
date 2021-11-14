@@ -8,7 +8,7 @@ const ManageOrder = () => {
 
     
   useEffect(() => {
-    fetch("http://localhost:5000/manageOrder")
+    fetch("https://gentle-brushlands-73473.herokuapp.com/manageOrder")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [isDeleted]);
@@ -20,7 +20,7 @@ const ManageOrder = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = data => {
       console.log(data, id);
-    fetch(`http://localhost:5000/statusUpdate/${id}`,{
+    fetch(`https://gentle-brushlands-73473.herokuapp.com/statusUpdate/${id}`,{
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(data),
@@ -30,7 +30,7 @@ const ManageOrder = () => {
   };
 
   const handleOrderDelete = (id) =>{
-    const url = `http://localhost:5000/deleteOrders/${id}`
+    const url = `https://gentle-brushlands-73473.herokuapp.com/deleteOrders/${id}`
     fetch(url, {
         method : 'DELETE',
         headers : {'content-type' : 'application/json'}

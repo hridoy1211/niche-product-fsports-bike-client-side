@@ -4,3 +4,15 @@
   padding: 3px;
   border-radius: 100%;
 }
+
+.bannerImg {
+  background: url(../../images/bike-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: 100%;
+}

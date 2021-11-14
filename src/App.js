@@ -23,6 +23,7 @@ import ManageProducts from './Components/ManageProducts/ManageProducts';
 import MakeAdmin from './Components/MakeAdmin/MakeAdmin';
 import ManageOrder from './Components/ManageOrder/ManageOrder';
 import Payment from './Components/Payment/Payment';
+import Explore from './Components/Explore/Explore';
 
 function App() {
   return (
@@ -73,6 +74,10 @@ function App() {
 
           <Route exact path='/displayReviews'>
             <DisplayReviews></DisplayReviews>
+          </Route>
+
+          <Route exact path='/explore'>
+            <Explore></Explore>
           </Route>
 
           <Route exact path='/manageOrder'>

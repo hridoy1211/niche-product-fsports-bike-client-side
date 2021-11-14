@@ -1,15 +1,15 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import swal from 'sweetalert';
-import Navigation from '../Shared/Navigation/Navigation';
 import './AddProducts.css'
+
 
 const AddProducts = () => {
 
     const { register, handleSubmit, reset } = useForm();
         const onSubmit = data => {
             
-            fetch('http://localhost:5000/addProducts',{
+            fetch('https://gentle-brushlands-73473.herokuapp.com/addProducts',{
                 method: 'POST',
                 headers: {'content-type':'application/json'},
                 body: JSON.stringify(data)

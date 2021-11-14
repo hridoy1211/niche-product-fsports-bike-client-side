@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Shared/Footer/Footer';
+import Navigation from '../Shared/Navigation/Navigation';
 
-const Products = () => {
+const Explore = () => {
     const [bikes, setBikes] = useState([])
     useEffect(() => {
         fetch('https://gentle-brushlands-73473.herokuapp.com/allProducts')
         .then(res => res.json())
         .then(data => setBikes(data))
     },[])
-    const highlighted = bikes.slice(0,6);
     return (
         <div>
+            <Navigation></Navigation>
             <div className='container my-5'>
             <h1 className='text-center my-5'>Our Latest Bikes</h1>
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 {
-                    highlighted.map(bike => <div key={bike._id} className="col">
+                    bikes.map(bike => <div key={bike._id} className="col">
                     <div className="card h-100">
                     <img src={bike.img}className="card-img-top" alt="..."/>
                     <div className="card-body">
@@ -31,10 +33,9 @@ const Products = () => {
                 }
             </div>
         </div>
+        <Footer></Footer>
         </div>
     );
 };
 
-
-
-export default Products;
+export default Explore;

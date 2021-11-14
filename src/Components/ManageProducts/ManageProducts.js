@@ -7,13 +7,13 @@ const ManageProducts = () => {
     const [isDeleted, setIsDeleted] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:5000/allProducts')
+        fetch('https://gentle-brushlands-73473.herokuapp.com/allProducts')
         .then(res => res.json())
         .then(data => setManageProducts(data))
     },[isDeleted])
 
     const handleProductDelete = (id) =>{
-        const url = `http://localhost:5000/deleteProduct/${id}`
+        const url = `https://gentle-brushlands-73473.herokuapp.com/deleteProduct/${id}`
         fetch(url, {
             method : 'DELETE',
             headers : {'content-type' : 'application/json'}
