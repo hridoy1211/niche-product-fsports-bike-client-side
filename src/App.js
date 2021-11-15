@@ -24,6 +24,7 @@ import MakeAdmin from './Components/MakeAdmin/MakeAdmin';
 import ManageOrder from './Components/ManageOrder/ManageOrder';
 import Payment from './Components/Payment/Payment';
 import Explore from './Components/Explore/Explore';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -52,9 +53,9 @@ function App() {
             <Register></Register>
           </Route>
 
-          <Route exact path='/singlePoduct/:bikeId'>
+          <PrivateRoute exact path='/singlePoduct/:bikeId'>
             <SingleProduct></SingleProduct>
-          </Route>
+          </PrivateRoute>
 
           <Route exact path='/addProducts'>
             <AddProducts></AddProducts>
@@ -92,9 +93,9 @@ function App() {
             <ManageProducts></ManageProducts>
           </Route>
 
-          <Route path='/dashboard'>
+          <PrivateRoute path='/dashboard'>
             <Dashboard></Dashboard>
-          </Route>
+          </PrivateRoute>
 
           <Route exact path='/makeAdmin'>
             <MakeAdmin></MakeAdmin>

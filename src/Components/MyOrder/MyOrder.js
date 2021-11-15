@@ -40,7 +40,7 @@ const MyOrder = () => {
             {
                 orders.map(order => 
                 <div style={{backgroundColor:'#fef3f4', padding:'10px', margin:'10px'}} className='col-md-3 col-6'>
-                    <div >
+                    <div>
                         <h5>{order.email}</h5>
                         <p>{order.bikename}</p>
                         <button onClick={() => handleOrderDelete(order._id)} className="btn btn-design" type="button">Cancel Order</button>

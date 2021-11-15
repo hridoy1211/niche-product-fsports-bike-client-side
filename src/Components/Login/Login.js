@@ -1,15 +1,17 @@
-import React from 'react';
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link, useLocation, useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import useAuth from '../hooks/useAuth';
 import login from '../../images/login/login.jpg'
 
 const Login = () => {
-    const {handelLogin, signInUsingGoogle, isLoading}=useAuth()
-   
-    const { register, handleSubmit, watch, errors } = useForm();
+    const {user, handelLogin, signInUsingGoogle, isLoading}=useAuth()
+    const location = useLocation()
+    const history = useHistory()
+
+    const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
-        handelLogin(data?.email,data?.password)
+        handelLogin(data?.email,data?.password, location, history)
         console.log(data);
       };
 

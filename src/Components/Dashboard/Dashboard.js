@@ -11,6 +11,7 @@ import ManageProducts from '../ManageProducts/ManageProducts';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageOrder from '../ManageOrder/ManageOrder';
 import Payment from '../Payment/Payment';
+import DashboardDefault from '../DashboardDefault/DashboardDefault';
 
 
 const Dashboard = () => {
@@ -40,7 +41,8 @@ const Dashboard = () => {
                     <div className="col-md-3">
                         <div className="dashboard-container p-4">
                             <h5>Dashboard</h5>
-                            <Link to={`${url}`}><li className='dashboard-item mt-3'>Booking List</li></Link>
+                            <Link to={`${url}`}><li className='dashboard-item mt-3'>Welcome</li></Link>
+                            <Link to={`${url}/myOrder`}><li className='dashboard-item mt-3'>My Order</li></Link>
                             <Link to={`${url}/addReview`}><li className='dashboard-item'>Add Review</li></Link>
                             {isAdmin && <div><Link to={`${url}/addProducts`}><li className='dashboard-item'>Add Products</li></Link>
                             <Link to={`${url}/payment`}><li className='dashboard-item'>Payment</li></Link>
@@ -52,10 +54,13 @@ const Dashboard = () => {
                     <div className="col-md-9">
                         <Switch>
                             <Route exact path={path}>
-                                <MyOrder></MyOrder>
+                                <DashboardDefault></DashboardDefault>
                             </Route>
                             <Route exact path={`${path}/addReview`}>
                                 <Reviews></Reviews>
+                            </Route>
+                            <Route exact path={`${path}/myOrder`}>
+                                <MyOrder></MyOrder>
                             </Route>
                             <Route exact path={`${path}/addProducts`}>
                                 <AddProducts></AddProducts>

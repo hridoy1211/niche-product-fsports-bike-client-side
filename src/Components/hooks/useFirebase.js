@@ -14,6 +14,7 @@ const useFirebase = () => {
         const signInUsingGoogle = () => {
             setIsLoading(true);
             const googleProvider = new GoogleAuthProvider();
+            
 
             signInWithPopup(auth, googleProvider)
                 .then(result => {
@@ -67,17 +68,20 @@ const useFirebase = () => {
         };
 
 
-        const handelLogin=(email,password)=>{
+        const handelLogin=(email,password, location, history)=>{
             signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            // Signed in 
-            const user = userCredential.user;
-            console.log(user);
-        })
-        .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message});
-        };
+            .then((userCredential) => {
+                const destination = location?.state?.from || '/';
+                history.replace(destination); 
+                // Signed in 
+                const user = userCredential.user;
+                console.log(user);
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message
+            }).finally(() => setIsLoading(false))
+            };
 
         
 
